@@ -1,0 +1,5 @@
+Project name: FeedtheHungry
+Project ID: feedthehungry-3c532
+Project number: 611727622166
+Default GCP resource location: Not yet selected
+Web API Key :AIzaSyBxqzp6-a6-jFU9v4HT_enmLhssMQ6nTh8
