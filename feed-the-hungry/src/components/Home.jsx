@@ -8,7 +8,7 @@ const Home = () => {
         <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', height: '100vh', backgroundSize: 'cover', }}>
             <div className='Home'>
                 <div className='Navbar'>
-                    <div className='logo'><MdOutlineFastfood /> Feed the Hungry</div>
+                    <div className='logo'><MdOutlineFastfood /> <span> Feed the Hungry</span></div>
                     <div className='navbar-contents'>
                         <ul>
                             <li>Home</li>
