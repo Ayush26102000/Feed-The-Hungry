@@ -1,0 +1,62 @@
+.Navbar {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.logo{
+    padding-left: 3rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    padding-right: 5rem;
+    font-size: 1.3rem;
+    
+}
+
+li{
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+li:hover{
+    transform: scale(0.9);
+    /* color: rgb(205, 205, 205); */
+    opacity: 0.8;
+}
+
+.signup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-btns{
+    display: flex;
+    flex-direction:column;
+    padding: 12rem 12rem;
+    
+}
+
+.signup-btns button{
+        padding: 1rem 2.5rem;
+        background-color: #ecececf5;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        margin: 0.8rem 0;
+        cursor: pointer;
+        border-radius: 1rem;
+        border: none;
+        outline: 0;
+        transition: 0.5s all ease;
+}
+
+.signup-btns button:hover{
+    transform: scale(1.2);
+}
