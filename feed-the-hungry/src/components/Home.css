@@ -11,24 +11,7 @@
    
 }
 
-.logo span{
-    animation: logo 4s infinite;
-}
 
-@keyframes logo {
-    0% {
-        color: #dedede;
-    }
-    25% {
-        color: #b3b3b3;
-    }
-    50% {
-        color: rgb(107, 107, 107);
-    }
-    100% {
-        color: #afafaf;
-    }
-}
 
 ul {
     display: flex;
@@ -47,7 +30,7 @@ li{
 
 li:hover{
     transform: scale(0.9);
-    /* color: rgb(205, 205, 205); */
+   
     opacity: 0.8;
 }
 
@@ -59,15 +42,13 @@ li:hover{
 .signup-btns{
     display: flex;
     flex-direction:column;
-    padding: 12rem 12rem;
-    
-    
+    padding: 12rem 12rem;    
 }
 
 .signup-btns button{
         padding: 1rem 2.5rem;
         background-color: #ecececf5;
-        color: rgb(0, 0, 0);
+        color: #00448f;
         font-weight: 600;
         margin: 0.8rem 0;
         cursor: pointer;

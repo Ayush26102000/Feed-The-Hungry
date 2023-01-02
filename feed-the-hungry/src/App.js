@@ -1,18 +1,15 @@
-import * as React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import DonaterSignUp from './components/DonaterSignUp';
-// import Home from './components/Home';
-// import NgoSignup from './components/NgoSignup';
-
-
-
-
+import Home from './components/Home';
+import NgoSignup from './components/NgoSignup';
 
 function App() {
   return (
-    // <NgoSignup/>
-    // <Home/>
-    <DonaterSignUp/>
+    <BrowserRouter>
+      <Home />
+    </BrowserRouter>
   );
 }
 

@@ -1,4 +1,4 @@
-.Navbar {
+/* .Navbar {
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ li{
 
 li:hover{
     transform: scale(0.9);
-    /* color: rgb(205, 205, 205); */
+    
     opacity: 0.8;
 }
 
@@ -91,4 +91,4 @@ li:hover{
 }
 
 
-
+ */

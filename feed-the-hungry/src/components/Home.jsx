@@ -20,15 +20,17 @@ const Home = () => {
                     </div>
                 </div>
                <div className='signup'>
-               <div className='signup-btns'> <button className='ngo-signup'>Ngo / Consumer Sign Up</button>
+               <div className='signup-btns'>
+                
+                 <button className='ngo-signup'>Ngo / Consumer Sign Up</button>
                     <button className='rest-signup'> Food Donater Sign Up</button>
                     <button>Have an Account? Login</button></div>
-                <div className=''>
-                    
+                <div className=''>                 
                 </div>
                </div>
             </div>
         </div>
+        
     )
 }
 
