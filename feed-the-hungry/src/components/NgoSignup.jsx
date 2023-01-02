@@ -29,11 +29,11 @@ const NgoSignup = () => {
                            <input type="password" placeholder='Confirm Password...' />
                            <input type='text' placeholder='Location'/>
                            <input type='number' placeholder='Pincode'/>
-                           <button onSubmit=''>Sign Up</button>
+                           <button onSubmit=''>Consumer Sign Up</button>
                         </form>
                     </div>
                     <div className=''>
-
+                       
                     </div>
                 </div>
             </div>
