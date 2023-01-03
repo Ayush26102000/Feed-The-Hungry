@@ -21,7 +21,7 @@ const NgoSignup = () => {
                     </div>
                 </div>
                 <div className='signup'>
-                    <div className='signup-btns'>
+                    <div className='signup-btns' style={{padding:'0'}}> 
                         <form action="">
                            <input type="text" placeholder='Name of the consumer...' />
                            <input type="email" placeholder='Email...' />

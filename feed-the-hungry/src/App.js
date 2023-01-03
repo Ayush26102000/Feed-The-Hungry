@@ -4,14 +4,23 @@ import Blog from './components/Blog';
 import DonaterSignUp from './components/DonaterSignUp';
 import Home from './components/Home';
 import NgoSignup from './components/NgoSignup';
+import {
+  BrowserRouter, Routes, Switch,
+  Route, Redirect,
+} from "react-router-dom";
 
 function App() {
   return (
-    
-    <div>
-      {/* <Home/> */}
-      <Blog/>
-    </div>
+
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/NgoSignup" element={<NgoSignup/>} />
+          <Route exact path="/DonaterSignUp" element={<DonaterSignUp/>} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

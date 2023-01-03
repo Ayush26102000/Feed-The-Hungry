@@ -71,7 +71,7 @@ const Blog = () => {
                 </div>
                 
                 <div className='blog-treatment'>
-                    <h1 style={{padding:'2rem 0'}}>FOOD WASTE TREATMENT TECHNOLOGIES</h1>
+                    <h2>FOOD WASTE TREATMENT TECHNOLOGIES</h2>
                     <p className='t-p'> FOOD WASTE TREATMENT TECHNOLOGIES  presents an overview of the
                         technologies available for the treatment of
                         collected food waste.

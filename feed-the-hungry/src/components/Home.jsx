@@ -2,6 +2,7 @@ import React from 'react';
 import '../components/Home.css';
 import Background from '../media/back.jpg';
 import { MdOutlineFastfood } from 'react-icons/md';
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -30,8 +31,8 @@ const Home = () => {
                                 connecting this abundance with people <br />experiencing food insecurity, and inspiring 
                                 others <br />to do the same.</p>
                         </div>
-                        <button className='ngo-signup'>Ngo / Consumer Sign Up</button>
-                        <button className='rest-signup'> Food Donater Sign Up</button>
+                        <button className='ngo-signup'> <Link to={'/NgoSignup'}>Ngo  Consumer Sign Up </Link> </button>
+                        <button className='rest-signup'> <Link to={'/DonaterSignup'}>Food Donater Sign Up</Link>  </button>
                         <button>Have an Account? Login</button></div>
                     <div className=''>
                     </div>
