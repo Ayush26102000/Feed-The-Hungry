@@ -1,0 +1,66 @@
+.blog {
+    color: aliceblue;
+    display: flex;
+    height: 80vh;
+
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.blog-left {
+    padding: 0 4rem;
+
+}
+
+
+
+.blog-left h1 {
+    padding-bottom: 1rem;
+}
+
+.blog-right h1 {
+    padding-bottom: 1rem;
+}
+
+.blog-right {
+    padding-right: 4rem;
+}
+
+
+.blog-right img {
+    width: 600px;
+    height: auto;
+
+}
+
+.blog-left img {
+    width: 600px;
+    height: auto;
+
+}
+
+.blog-treatment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem 4rem;
+    color: aliceblue;
+    
+}
+
+
+.blog-treatment h2{
+    padding: 2rem 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+.t-p{
+    padding: 4rem 4rem;
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+}

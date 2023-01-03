@@ -29,28 +29,44 @@ li{
 }
 
 li:hover{
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
+    letter-spacing: .4rem;
    
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .signup{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .signup-btns{
     display: flex;
     flex-direction:column;
-    padding: 12rem 12rem;    
+    padding: 3rem 10rem; 
+    color: aliceblue;   
 }
+
+.slogan {
+    padding: 2rem 0 ;
+}
+
+.slogan h1{
+    font-size: 3rem;
+}
+
+.slogan span{
+    font-size: 5rem;
+}
+
 
 .signup-btns button{
         padding: 1rem 2.5rem;
         background-color: #ecececf5;
         color: #00448f;
         font-weight: 600;
-        margin: 0.8rem 0;
+        margin: 0.8rem 6rem .8rem 0;
         cursor: pointer;
         border-radius: 1rem;
         border: none;
@@ -65,3 +81,4 @@ li:hover{
     transform: scale(1.2);
     background-color: rgb(205, 205, 205);
 }
+

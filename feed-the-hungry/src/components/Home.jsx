@@ -19,18 +19,26 @@ const Home = () => {
                         </ul>
                     </div>
                 </div>
-               <div className='signup'>
-               <div className='signup-btns'>
-                
-                 <button className='ngo-signup'>Ngo / Consumer Sign Up</button>
-                    <button className='rest-signup'> Food Donater Sign Up</button>
-                    <button>Have an Account? Login</button></div>
-                <div className=''>                 
+                <div className='signup'>
+
+                    <div className='signup-btns'>
+                        <div className='slogan'>
+                            <h1>Think Eat
+                                 <span> Save.</span>
+                            </h1>
+                            <p>Food Forward fights hunger and prevents food waste by rescuing<br /> fresh surplus produce,
+                                connecting this abundance with people <br />experiencing food insecurity, and inspiring 
+                                others <br />to do the same.</p>
+                        </div>
+                        <button className='ngo-signup'>Ngo / Consumer Sign Up</button>
+                        <button className='rest-signup'> Food Donater Sign Up</button>
+                        <button>Have an Account? Login</button></div>
+                    <div className=''>
+                    </div>
                 </div>
-               </div>
             </div>
         </div>
-        
+
     )
 }
 
