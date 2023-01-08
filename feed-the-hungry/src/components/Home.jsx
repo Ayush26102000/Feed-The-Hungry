@@ -12,8 +12,8 @@ const Home = () => {
                     <div className='logo'><MdOutlineFastfood /> <span> Feed the Hungry</span></div>
                     <div className='navbar-contents'>
                         <ul>
-                            <li>Home</li>
-                            <li>Blog</li>
+                           <li><Link to={'/'}>Home</Link></li>
+                         <li><Link to={'/Blog'}>Blog </Link>  </li>
                             <li>Plan Event?</li>
                             <li>Have a Problem?</li>
                             <li>About us</li>
