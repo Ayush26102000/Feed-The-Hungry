@@ -14,9 +14,9 @@ const Home = () => {
                         <ul>
                            <li><Link to={'/'}>Home</Link></li>
                          <li><Link to={'/Blog'}>Blog </Link>  </li>
-                            <li>Plan Event?</li>
-                            <li>Have a Problem?</li>
-                            <li>About us</li>
+                            <li> <Link to={'/Blog'}>Plan Event? </Link> </li>
+                            <li> <Link to={'/Blog'}>Have a Problem?</Link> </li>
+                            <li> <Link to={'/Blog'}>About us </Link> </li>
                         </ul>
                     </div>
                 </div>

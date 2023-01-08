@@ -22,16 +22,17 @@ ul {
     font-size: 1.3rem;
 }
 
-li{
+li a{
     padding: 0 1rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: white;
 }
 
-li:hover{
+li a:hover{
     /* transform: scale(0.9); */
-    letter-spacing: .4rem;
-   
+    letter-spacing: .4rem;  
     opacity: 0.6;
 }
 
@@ -75,6 +76,10 @@ li:hover{
         
 }
 
+.signup-btns button a{
+    text-decoration: none;
+    color:#00448f;
+}
 
 
 .signup-btns button:hover{
