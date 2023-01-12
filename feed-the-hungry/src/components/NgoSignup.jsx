@@ -7,11 +7,11 @@ import './NgoSignup.css';
 const NgoSignup = () => {
     return (
         <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', height: '100vh', backgroundSize: 'cover', }}>
-            <div className='Home'>
-                <div className='Navbar'>
-                    <div className='logo'><MdOutlineFastfood /> Feed the Hungry</div>
-                    <div className='navbar-contents'>
-                        <ul>
+            <div className='ngoSignup'>
+                <div className='ngoNavbar'>
+                    <div className='ngologo'><MdOutlineFastfood /> Feed the Hungry</div>
+                    <div className='ngonavbar-contents'>
+                        <ul className='ngoUl'>
                             <li>Home</li>
                             <li>Blog</li>
                             <li>Plan Event?</li>
@@ -20,16 +20,16 @@ const NgoSignup = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='signup'>
-                    <div className='signup-btns' style={{padding:'0'}}> 
+                <div className='ngosignup'>
+                    <div className='ngosignup-btns' style={{padding:'0'}}> 
                         <form action="">
-                           <input type="text" placeholder='Name of the consumer...' />
-                           <input type="email" placeholder='Email...' />
-                           <input type="password" placeholder='Password...' />
-                           <input type="password" placeholder='Confirm Password...' />
-                           <input type='text' placeholder='Location'/>
-                           <input type='number' placeholder='Pincode'/>
-                           <button onSubmit='' >Consumer Sign Up</button>
+                           <input type="text" placeholder='Name of the consumer...' className='ngoInput' />
+                           <input type="email" placeholder='Email...' className='ngoInput' />
+                           <input type="password" placeholder='Password...'  className='ngoInput'/>
+                           <input type="password" placeholder='Confirm Password...'  className='ngoInput'/>
+                           <input type='text' placeholder='Location' className='ngoInput'/>
+                           <input type='number' placeholder='Pincode' className='ngoInput'/>
+                           <button onSubmit='' className='ngoSignup-btn' >Consumer Sign Up</button>
                         </form>
                     </div>
                     <div className=''>

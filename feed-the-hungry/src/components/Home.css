@@ -1,89 +1,362 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .Navbar {
-    color: rgb(255, 255, 255);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 2rem 0;
+    width: 100%;
+    background-color: rgb(216, 255, 219);
+    box-shadow: 0px 2px 5px #ccc;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
-.logo{
-    padding-left: 3rem;
-    font-size: 1.5rem;
-   
-}
-
-
-
-ul {
+.logo {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+    margin-left: 10px;
+    color: #4caf50;
+}
+
+.logo span {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.navbar-contents {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-contents ul {
+    display: flex;
     list-style-type: none;
-    color: rgb(255, 255, 255);
-    padding-right: 5rem;
-    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
 }
 
-li a{
-    padding: 0 1rem;
+.navbar-contents ul li {
+    margin-right: 10px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+}
+
+.navbar-contents ul li a {
     text-decoration: none;
-    color: white;
+    color: #333;
+    transition: all 0.3s ease;
 }
 
-li a:hover{
-    /* transform: scale(0.9); */
-    letter-spacing: .4rem;  
-    opacity: 0.6;
+.navbar-contents ul li a:hover {
+    color: #4caf50;
 }
 
-.signup{
+.signup {
     display: flex;
-    justify-content: space-between;
-    
-}
-
-.signup-btns{
-    display: flex;
-    flex-direction:column;
-    padding: 3rem 10rem; 
-    color: aliceblue;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 5px #ccc;
 }
 
 .slogan {
-    padding: 2rem 0 ;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.slogan h1{
-    font-size: 3rem;
+.slogan h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #4caf50;
 }
 
-.slogan span{
-    font-size: 5rem;
+.slogan h1 span {
+    color: #333;
 }
 
-
-.signup-btns button{
-        padding: 1rem 2.5rem;
-        background-color: #ecececf5;
-        color: #00448f;
-        font-weight: 600;
-        margin: 0.8rem 6rem .8rem 0;
-        cursor: pointer;
-        border-radius: 1rem;
-        border: none;
-        outline: 0;
-        transition: 0.5s all ease;
-        
+.slogan p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
 }
 
-.signup-btns button a{
+.signup-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ngo-signup,
+.rest-signup {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
     text-decoration: none;
-    color:#00448f;
+    transition: all 0.3s ease;
 }
 
+.ngo-signup:hover,
+.rest-signup:hover {
+    background-color: #3e8e41;
+}
 
-.signup-btns button:hover{
-    transform: scale(1.2);
-    background-color: rgb(205, 205, 205);
+.signup-btns button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.signup-btns button:hover {
+    background-color: #3e8e41;
+}
+
+.signup-btns button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4caf50;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .Navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-contents {
+        justify-content: center;
+    }
+
+    .navbar-contents ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar-contents ul li {
+        margin: 5px;
+    }
+
+    .signup {
+        margin-top: 100px;
+    }
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.Home {
+    animation: slideInLeft 0.5s ease;
+}
+
+/* /Awesome hover effects/ */
+.navbar-contents ul li a:hover {
+    color: #4caf50;
+    text-decoration: underline;
+}
+
+.ngo-signup:hover,
+.rest-signup:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+/* /Awesome focus effects/  */
+.ngo-signup:focus,
+.rest-signup:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4caf50;
+    transform: scale(1.05);
+}
+
+/* /Background styles/ */
+.Home {
+   
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* /Home component styles/ */
+.Home {
+    position: relative;
+}
+
+.Home .Navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.Home .signup {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(to right,  rgb(51, 139, 147), rgb(182, 244, 146));
+}
+
+.Home .slogan h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.Home .slogan p {
+    font-size: 1.5em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.Home .signup-btns {
+    margin-top: 50px;
+    
+}
+
+.Home .ngo-signup,
+.Home .rest-signup {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.signup-btns button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+}
+
+.signup-btns button:hover {
+    background-color: #3e8e41;
+}
+
+.signup-btns button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4caf50;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .Home .Navbar {
+        flex-wrap: wrap;
+    }
+
+    .Home .navbar-contents {
+        justify-content: center;
+    }
+
+    .Home .navbar-contents ul {
+        flex-wrap: wrap;
+    }
+
+    .Home .navbar-contents ul li {
+        margin: 5px;
+    }
+
+    .Home .signup {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .Home .slogan h1 {
+        font-size: 2.5em;
+    }
+
+    .Home .slogan p {
+        font-size: 1.2em;
+    }
+
+    .Home .signup-btns {
+        margin-top: 20px;
+    }
+
+    .Home .ngo-signup,
+    .Home .rest-signup,
+    .Home .signup-btns button {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .Home .slogan h1 {
+        font-size: 3em;
+    }
+
+    .Home .slogan p {
+        font-size: 1.3em;
+    }
+
+    .Home .signup-btns {
+        margin-top: 30px;
+    }
+
+    .Home .ngo-signup,
+    .Home .rest-signup,
+    .Home .signup-btns button {
+        font-size: 1.3em;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .Home .slogan h1 {
+        font-size: 4em;
+    }
+
+    .Home .slogan p {
+        font-size: 1.5em;
+    }
+
+    .Home .signup-btns {
+        margin-top: 50px;
+    }
+
+    .Home .ngo-signup,
+    .Home .rest-signup,
+    .Home .signup-btns button {
+        font-size: 1.5em;
+        padding: 20px;
+    }
 }
 

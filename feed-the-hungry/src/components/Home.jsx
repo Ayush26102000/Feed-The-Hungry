@@ -3,10 +3,14 @@ import '../components/Home.css';
 import Background from '../media/back.jpg';
 import { MdOutlineFastfood } from 'react-icons/md';
 import { Link } from "react-router-dom";
+import { FaBars } from 'react-icons/fa';
+
 
 const Home = () => {
+
+    
     return (
-        <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', height: '100vh', backgroundSize: 'cover', }}>
+        <div>
             <div className='Home'>
                 <div className='Navbar'>
                     <div className='logo'><MdOutlineFastfood /> <span> Feed the Hungry</span></div>
@@ -44,3 +48,4 @@ const Home = () => {
 }
 
 export default Home
+
